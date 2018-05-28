@@ -3,7 +3,7 @@ import {
 } from '../constants';
 
 export const toggleTodo = (todoIndex) => {
-    const todoList = JSON.parse(localStorage.getItem('TodoList')) || [];  
+    const todoList = JSON.parse(localStorage.getItem('TodoList'));  
     todoList[todoIndex].completed = Date.now();
     localStorage.setItem('TodoList', JSON.stringify(todoList));
     return {

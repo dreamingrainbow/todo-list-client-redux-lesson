@@ -48,7 +48,7 @@ class App extends Component {
     const todoIndex = Number(e.target.dataset.todo);    
     const todoList = this.props.todoList;
     if(!todoList[todoIndex].completed) {
-        this.props.toggleTodo(todoIndex, todoList);
+        this.props.toggleTodo(todoIndex);
     }
   }
   
